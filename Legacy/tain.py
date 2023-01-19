@@ -3,15 +3,7 @@ import torch
 # from albumentations.pytorch import ToTensorV2
 from tqdm import tqdm
 import torch.nn as nn
-import torch.optim as optim
-from DL_Group_assignment_U_net_V1 import UNET
-from utils import (
-    load_checkpoint,
-    save_checkpoint,
-    get_loaders,
-    check_accuracy,
-    save_predictions_as_imgs,
-)
+from Legacy.DL_Group_assignment_U_net_V1 import UNET
 
 # Hyperparameters etc.
 LEARNING_RATE = 1e-4
