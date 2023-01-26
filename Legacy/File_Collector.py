@@ -2,9 +2,11 @@ import os
 import pandas as pd
 import numpy as np
 class File_Collector:
-    def __init__(self):
-        self.MASK_PATH = r'Hurricane_Harvey\Hurricane_Harvey\vectors\random-split-_2022_11_17-22_35_45\Masks'
-        self.IMAGE_PATH = r'Hurricane_Harvey\Hurricane_Harvey\rasters\raw'
+    def __init__(self,
+                 MASK_PATH = r'Hurricane_Harvey\Hurricane_Harvey\vectors\random-split-_2022_11_17-22_35_45\Masks',
+                 IMAGE_PATH = r'Hurricane_Harvey\Hurricane_Harvey\rasters\raw'):
+        self.MASK_PATH = MASK_PATH
+        self.IMAGE_PATH = IMAGE_PATH
 
     def create_df(self):
         train_set = []
